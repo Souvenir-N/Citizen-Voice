@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Citizen Voice | Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <i class="fa-solid fa-microphone-lines"></i>
+        Citizen Voice
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <span class="nav-time" id="navTime"></span>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="services.html"><i class="fa-solid fa-tools"></i> Services</a>
+        <a href="report.html"><i class="fa-solid fa-flag"></i> Report Issue</a>
+        <a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container fade-in">
+        <h1>Gallery</h1>
+        <p>Sample community images and public service moments.</p>
+      </div>
+    </section>
+
+    <section class="section container fade-in">
+      <div class="gallery-grid">
+        <div class="gallery-item" style="--delay: 0.05s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrlBxOEZ35NC-VbURy06vAW9TCDV2lZO-DaA&s" alt="Community report" />
+        </div>
+        <div class="gallery-item" style="--delay: 0.12s">
+          <img src="https://www.minaloc.gov.rw/fileadmin/_processed_/e/2/csm_Umuganda_2025_01d0dc158d.jpg" alt="Citizen engagement" />
+        </div>
+        <div class="gallery-item" style="--delay: 0.18s">
+          <img src="https://www.wearetech.africa/media/k2/items/cache/b1905ba663a06a651aac60b6e5a0025b_XL.jpg" alt="Public service" />
+        </div>
+        <div class="gallery-item" style="--delay: 0.18s">
+          <img src="https://build.thinkglobalhealth.org/wp-content/uploads/2023/05/RTXA3E84_0.jpg" alt="Public service" />
+        </div>
+        <div class="gallery-item" style="--delay: 0.18s">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaEMozDWeS_3rldwow2sJruqCmauYFuKv97g&s" alt="Public service" />
+        </div>
+        <div class="gallery-item" style="--delay: 0.18s">
+          <img src="https://brokenchalk.org/wp-content/uploads/2023/05/Rwanda_Vvob.jpg" alt="Public service" />
+        </div>
+        <!-- Add more .gallery-item blocks as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Citizen Voice</h3>
+        <p>Giving communities a simple way to report issues and improve public service delivery.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="report.html">Report Issue</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: info@citizenvoice.gov</p>
+        <p>Phone: +250 700 000 000</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Citizen Voice. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
