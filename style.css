@@ -167,6 +167,39 @@ body.dark-mode .header {
   background: rgba(30, 136, 229, 0.08);
 }
 
+.language-selector select {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--light);
+  color: var(--text);
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color var(--transition), background var(--transition);
+}
+
+.language-selector select:hover,
+.language-selector select:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.language-selector i {
+  color: var(--text);
+  font-size: 1rem;
+  transition: color var(--transition);
+}
+
+.language-selector:hover i {
+  color: var(--primary);
+}
+
 /* Hero */
 .hero {
   position: relative;
@@ -691,10 +724,17 @@ textarea {
 }
 
 .footer a {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #cbd5e1;
   margin-bottom: 10px;
   transition: color var(--transition);
+}
+
+.footer a i {
+  margin-right: 8px;
+  width: 16px;
+  text-align: center;
 }
 
 .footer a:hover {
