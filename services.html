@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citizen Voice | Services</title>
+  <title data-translate="title.services">Citizen Voice | Services</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,20 @@
       </button>
 <span class="nav-time" id="navTime"></span>
       <nav class="nav" id="navMenu">
-  <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-  <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-  <a href="services.html"><i class="fa-solid fa-tools"></i> Services</a>
-  <a href="report.html"><i class="fa-solid fa-flag"></i> Report Issue</a>
-  <a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a>
-  <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <a href="index.html" data-translate="nav.home"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="about.html" data-translate="nav.about"><i class="fa-solid fa-circle-info"></i> About</a>
+  <a href="services.html" class="active" data-translate="nav.services"><i class="fa-solid fa-tools"></i> Services</a>
+  <a href="report.html" data-translate="nav.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
+  <a href="gallery.html" data-translate="nav.gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+  <a href="contact.html" data-translate="nav.contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <div class="language-selector">
+    <i class="fa-solid fa-globe"></i>
+    <select id="languageSelect" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="rw">Kinyarwanda</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
     <i class="fa-solid fa-moon"></i>
   </button>
@@ -39,50 +47,50 @@
   <main>
     <section class="page-hero">
       <div class="container fade-in">
-        <h1>Our Services</h1>
-        <p>Citizen Voice supports different reporting categories for community development.</p>
+        <h1 data-translate="services.title">Our Services</h1>
+        <p data-translate="services.subtitle">Citizen Voice supports different reporting categories for community development.</p>
       </div>
     </section>
 
     <section class="section container fade-in">
-        <h2>Our Services</h2>
-        <p>Explore how we support community needs.</p>
+        <h2 data-translate="services.explore.title">Our Services</h2>
+        <p data-translate="services.explore.desc">Explore how we support community needs.</p>
         <br>
       <div class="services-grid">
         <div class="service-card">
           <i class="fa-solid fa-hospital"></i>
-          <h3>Health Reports</h3>
-          <p>Report health emergencies, unsanitary environments, missing supplies, or hospital concerns.</p>
+          <h3 data-translate="services.card.health.title">Health Reports</h3>
+          <p data-translate="services.card.health.desc">Report health emergencies, unsanitary environments, missing supplies, or hospital concerns.</p>
         </div>
 
         <div class="service-card">
           <i class="fa-solid fa-shield-halved"></i>
-          <h3>Security Reports</h3>
-          <p>Send complaints about theft, violence, suspicious activity, and unsafe conditions.</p>
+          <h3 data-translate="services.card.security.title">Security Reports</h3>
+          <p data-translate="services.card.security.desc">Send complaints about theft, violence, suspicious activity, and unsafe conditions.</p>
         </div>
 
         <div class="service-card">
           <i class="fa-solid fa-shop"></i>
-          <h3>Trade Reports</h3>
-          <p>Report unfair prices, market problems, and trade-related issues affecting buyers or sellers.</p>
+          <h3 data-translate="services.card.trade.title">Trade Reports</h3>
+          <p data-translate="services.card.trade.desc">Report unfair prices, market problems, and trade-related issues affecting buyers or sellers.</p>
         </div>
 
         <div class="service-card">
           <i class="fa-solid fa-school"></i>
-          <h3>Education Reports</h3>
-          <p>Highlight school facility problems, teacher shortages, and learning environment issues.</p>
+          <h3 data-translate="services.card.education.title">Education Reports</h3>
+          <p data-translate="services.card.education.desc">Highlight school facility problems, teacher shortages, and learning environment issues.</p>
         </div>
 
         <div class="service-card">
           <i class="fa-solid fa-road"></i>
-          <h3>Infrastructure Reports</h3>
-          <p>Report damaged roads, broken water systems, or electricity interruptions.</p>
+          <h3 data-translate="services.card.infrastructure.title">Infrastructure Reports</h3>
+          <p data-translate="services.card.infrastructure.desc">Report damaged roads, broken water systems, or electricity interruptions.</p>
         </div>
 
         <div class="service-card">
           <i class="fa-solid fa-people-group"></i>
-          <h3>Community Support</h3>
-          <p>General daily life problems and neighborhood concerns can also be reported here.</p>
+          <h3 data-translate="services.card.community.title">Community Support</h3>
+          <p data-translate="services.card.community.desc">General daily life problems and neighborhood concerns can also be reported here.</p>
         </div>
       </div>
     </section>
@@ -90,7 +98,7 @@
     <section class="section section-alt">
       <div class="container fade-in">
         <div class="section-title">
-          <h2>What Users Gain</h2>
+          <h2 data-translate="services.benefits.title">What Users Gain</h2>
         </div>
 
         <div class="feature-wrap reverse">
@@ -98,12 +106,12 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4nsEvtpCixB9-J0g8EGx9cmZwajznKzPMcw&s" alt="Public service support" />
           </div>
           <div class="feature-text">
-            <h3>Better Communication</h3>
-            <p>Citizens can send concerns in a structured way, helping authorities understand the problem faster.</p>
-            <h3>Better Response</h3>
-            <p>Clear issue categories make it easier to assign reports to the right department.</p>
-            <h3>Better Communities</h3>
-            <p>When issues are reported quickly, solutions can be planned more effectively.</p>
+            <h3 data-translate="services.benefits.comm.title">Better Communication</h3>
+            <p data-translate="services.benefits.comm.desc">Citizens can send concerns in a structured way, helping authorities understand the problem faster.</p>
+            <h3 data-translate="services.benefits.response.title">Better Response</h3>
+            <p data-translate="services.benefits.response.desc">Clear issue categories make it easier to assign reports to the right department.</p>
+            <h3 data-translate="services.benefits.community.title">Better Communities</h3>
+            <p data-translate="services.benefits.community.desc">When issues are reported quickly, solutions can be planned more effectively.</p>
           </div>
         </div>
       </div>
@@ -113,23 +121,23 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <h3>Citizen Voice</h3>
-        <p>Giving communities a simple way to report issues and improve public service delivery.</p>
+        <h3 data-translate="footer.brand">Citizen Voice</h3>
+        <p data-translate="footer.desc">Giving communities a simple way to report issues and improve public service delivery.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="report.html">Report Issue</a>
+        <h4 data-translate="footer.links.title">Quick Links</h4>
+        <a href="index.html" data-translate="footer.links.home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" data-translate="footer.links.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="report.html" data-translate="footer.links.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p>Email: info@citizenvoice.gov</p>
-        <p>Phone: +250 700 000 000</p>
+        <h4 data-translate="footer.contact.title">Contact</h4>
+        <p data-translate="footer.contact.email">Email: info@citizenvoice.gov</p>
+        <p data-translate="footer.contact.phone">Phone: +250 700 000 000</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Citizen Voice. All rights reserved.</p>
+      <p data-translate="footer.copyright">&copy; 2026 Citizen Voice. All rights reserved.</p>
     </div>
   </footer>
 
