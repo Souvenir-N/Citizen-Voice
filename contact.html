@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citizen Voice | Contact</title>
+  <title data-translate="title.contact">Citizen Voice | Contact</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,20 @@
       </button>
 <span class="nav-time" id="navTime"></span>
       <nav class="nav" id="navMenu">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="services.html"><i class="fa-solid fa-hands-holding-circle"></i> Services</a>
-        <a href="report.html"><i class="fa-solid fa-flag"></i> Report Issue</a>
-        <a href="gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
-        <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a href="index.html" data-translate="nav.home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" data-translate="nav.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="services.html" data-translate="nav.services"><i class="fa-solid fa-hands-holding-circle"></i> Services</a>
+        <a href="report.html" data-translate="nav.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
+        <a href="gallery.html" data-translate="nav.gallery"><i class="fa-solid fa-image"></i> Gallery</a>
+        <a href="contact.html" class="active" data-translate="nav.contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <div class="language-selector">
+          <i class="fa-solid fa-globe"></i>
+          <select id="languageSelect" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="rw">Kinyarwanda</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -39,39 +47,39 @@
   <main>
     <section class="page-hero">
       <div class="container fade-in">
-        <h1>Contact Us</h1>
-        <p>Reach out for support, questions, or more information.</p>
+        <h1 data-translate="contact.title">Contact Us</h1>
+        <p data-translate="contact.subtitle">Reach out for support, questions, or more information.</p>
       </div>
     </section>
 
     <section class="section container fade-in">
       <div class="contact-grid">
         <div class="contact-info">
-          <h2>Get in Touch</h2>
-          <p><i class="fa-solid fa-location-dot"></i> Address: Kigali, Rwanda</p>
-          <p><i class="fa-solid fa-phone"></i> Phone: +250 700 000 000</p>
-          <p><i class="fa-solid fa-envelope"></i> Email: info@citizenvoice.gov</p>
-          <p>We are available for questions about reporting, services, and platform use.</p>
+          <h2 data-translate="contact.info.title">Get in Touch</h2>
+          <p data-translate="contact.info.address"><i class="fa-solid fa-location-dot"></i> Address: Kigali, Rwanda</p>
+          <p data-translate="contact.info.phone"><i class="fa-solid fa-phone"></i> Phone: +250 700 000 000</p>
+          <p data-translate="contact.info.email"><i class="fa-solid fa-envelope"></i> Email: info@citizenvoice.gov</p>
+          <p data-translate="contact.info.desc">We are available for questions about reporting, services, and platform use.</p>
         </div>
 
         <form id="contactForm" class="contact-form" novalidate>
           <div class="form-group">
-            <label for="contactName">Name</label>
-            <input type="text" id="contactName" name="contactName" placeholder="Your name" required />
+            <label for="contactName" data-translate="contact.name.label">Name</label>
+            <input type="text" id="contactName" name="contactName" placeholder="Your name" data-translate-placeholder="contact.name.placeholder" required />
           </div>
 
           <div class="form-group">
-            <label for="contactEmail">Email</label>
-            <input type="email" id="contactEmail" name="contactEmail" placeholder="Your email" required />
+            <label for="contactEmail" data-translate="contact.email.label">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="Your email" data-translate-placeholder="contact.email.placeholder" required />
           </div>
 
           <div class="form-group full-width">
-            <label for="contactMessage">Message</label>
-            <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Write your message" minlength="10" required></textarea>
+            <label for="contactMessage" data-translate="contact.message.label">Message</label>
+            <textarea id="contactMessage" name="contactMessage" rows="6" placeholder="Write your message" data-translate-placeholder="contact.message.placeholder" minlength="10" required></textarea>
           </div>
 
           <div class="form-group full-width">
-            <button type="submit" class="btn btn-primary">Send Message</button>
+            <button type="submit" class="btn btn-primary" data-translate="contact.sendBtn">Send Message</button>
           </div>
         </form>
       </div>
@@ -81,23 +89,23 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <h3>Citizen Voice</h3>
-        <p>Giving communities a simple way to report issues and improve public service delivery.</p>
+        <h3 data-translate="footer.brand">Citizen Voice</h3>
+        <p data-translate="footer.desc">Giving communities a simple way to report issues and improve public service delivery.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="report.html">Report Issue</a>
+        <h4 data-translate="footer.links.title">Quick Links</h4>
+        <a href="index.html" data-translate="footer.links.home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" data-translate="footer.links.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="report.html" data-translate="footer.links.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p>Email: info@citizenvoice.gov</p>
-        <p>Phone: +250 700 000 000</p>
+        <h4 data-translate="footer.contact.title">Contact</h4>
+        <p data-translate="footer.contact.email">Email: info@citizenvoice.gov</p>
+        <p data-translate="footer.contact.phone">Phone: +250 700 000 000</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Citizen Voice. All rights reserved.</p>
+      <p data-translate="footer.copyright">&copy; 2026 Citizen Voice. All rights reserved.</p>
       <p id="realTime" class="real-time"></p>
     </div>
   </footer>
