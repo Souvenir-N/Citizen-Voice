@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citizen Voice | Home</title>
+  <title data-translate="title.home">Citizen Voice | Home</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,12 +23,20 @@
       </button>
 <span class="nav-time" id="navTime"></span>
       <nav class="nav" id="navMenu">
-  <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-  <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-  <a href="services.html"><i class="fa-solid fa-tools"></i> Services</a>
-  <a href="report.html"><i class="fa-solid fa-flag"></i> Report Issue</a>
-  <a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a>
-  <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <a href="index.html" data-translate="nav.home"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="about.html" data-translate="nav.about"><i class="fa-solid fa-circle-info"></i> About</a>
+  <a href="services.html" data-translate="nav.services"><i class="fa-solid fa-tools"></i> Services</a>
+  <a href="report.html" data-translate="nav.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
+  <a href="gallery.html" class="active" data-translate="nav.gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+  <a href="contact.html" data-translate="nav.contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <div class="language-selector">
+    <i class="fa-solid fa-globe"></i>
+    <select id="languageSelect" aria-label="Select language">
+      <option value="en">English</option>
+      <option value="rw">Kinyarwanda</option>
+      <option value="fr">Français</option>
+    </select>
+  </div>
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
     <i class="fa-solid fa-moon"></i>
   </button>
@@ -48,59 +56,59 @@
       </div>
       <div class="hero-overlay"></div>
       <div class="container hero-content fade-in">
-        <h1>Welcome to Citizen Voice</h1>
-        <p>Your voice matters in building a better community.</p><br>
-        <p class="hero-text">
+        <h1 data-translate="hero.title">Welcome to Citizen Voice</h1>
+        <p data-translate="hero.subtitle">Your voice matters in building a better community.</p><br>
+        <p class="hero-text" data-translate="hero.description">
           A trusted platform where citizens report community problems to help government respond faster and improve daily life.
         </p>
         <div class="hero-actions">
-          <a href="report.html" class="btn btn-primary">Report an Issue</a>
-          <a href="services.html" class="btn btn-secondary">Explore Services</a>
+          <a href="report.html" class="btn btn-primary" data-translate="hero.reportBtn">Report an Issue</a>
+          <a href="services.html" class="btn btn-secondary" data-translate="hero.servicesBtn">Explore Services</a>
         </div>
       </div>
     </section>
 
     <section class="section container fade-in">
       <div class="section-title">
-        <h2>Community Concerns We Handle</h2>
-        <p>Simple reporting for everyday problems affecting people and neighborhoods.</p>
+        <h2 data-translate="concerns.title">Community Concerns We Handle</h2>
+        <p data-translate="concerns.subtitle">Simple reporting for everyday problems affecting people and neighborhoods.</p>
       </div>
 
       <div class="cards-grid">
         <div class="card">
           <i class="fa-solid fa-hospital card-icon"></i>
-          <h3>Health</h3>
-          <p>Hospitals, diseases, sanitation issues, and health-related emergencies.</p>
+          <h3 data-translate="card.health.title">Health</h3>
+          <p data-translate="card.health.desc">Hospitals, diseases, sanitation issues, and health-related emergencies.</p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-shield-halved card-icon"></i>
-          <h3>Security</h3>
-          <p>Crime, theft, violence, suspicious activity, and unsafe areas.</p>
+          <h3 data-translate="card.security.title">Security</h3>
+          <p data-translate="card.security.desc">Crime, theft, violence, suspicious activity, and unsafe areas.</p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-cart-shopping card-icon"></i>
-          <h3>Trade</h3>
-          <p>Market problems, unfair prices, seller disputes, and business concerns.</p>
+          <h3 data-translate="card.trade.title">Trade</h3>
+          <p data-translate="card.trade.desc">Market problems, unfair prices, seller disputes, and business concerns.</p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-school card-icon"></i>
-          <h3>Education</h3>
-          <p>School facilities, teachers, learning environment, and student welfare.</p>
+          <h3 data-translate="card.education.title">Education</h3>
+          <p data-translate="card.education.desc">School facilities, teachers, learning environment, and student welfare.</p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-droplet card-icon"></i>
-          <h3>Water</h3>
-          <p>Water shortages, broken taps, and sanitation concerns.</p>
+          <h3 data-translate="card.water.title">Water</h3>
+          <p data-translate="card.water.desc">Water shortages, broken taps, and sanitation concerns.</p>
         </div>
 
         <div class="card">
           <i class="fa-solid fa-road card-icon"></i>
-          <h3>Roads & Electricity</h3>
-          <p>Damaged roads, power outages, and other community infrastructure issues.</p>
+          <h3 data-translate="card.infrastructure.title">Roads & Electricity</h3>
+          <p data-translate="card.infrastructure.desc">Damaged roads, power outages, and other community infrastructure issues.</p>
         </div>
       </div>
     </section>
@@ -108,15 +116,15 @@
     <section class="section section-alt">
       <div class="container feature-wrap fade-in">
         <div class="feature-text">
-          <h2>Fast, Clean, and Easy Reporting</h2>
-          <p>
+          <h2 data-translate="feature.title">Fast, Clean, and Easy Reporting</h2>
+          <p data-translate="feature.desc">
             Citizens can submit issues through a simple form, and authorities can review complaints in one place.
             The platform is designed to be mobile-friendly, accessible, and easy to use.
           </p>
           <ul class="feature-list">
-            <li><i class="fa-solid fa-circle-check"></i> Responsive on mobile, tablet, and desktop</li>
-            <li><i class="fa-solid fa-circle-check"></i> Secure and organized issue submission</li>
-            <li><i class="fa-solid fa-circle-check"></i> Clear categories for faster response</li>
+            <li data-translate="feature.list1"><i class="fa-solid fa-circle-check"></i> Responsive on mobile, tablet, and desktop</li>
+            <li data-translate="feature.list2"><i class="fa-solid fa-circle-check"></i> Secure and organized issue submission</li>
+            <li data-translate="feature.list3"><i class="fa-solid fa-circle-check"></i> Clear categories for faster response</li>
           </ul>
         </div>
         <div class="feature-image">
@@ -127,25 +135,25 @@
 
     <section class="section container fade-in">
       <div class="section-title">
-        <h2>How It Works</h2>
-        <p>Three simple steps to report a community problem.</p>
+        <h2 data-translate="how.title">How It Works</h2>
+        <p data-translate="how.subtitle">Three simple steps to report a community problem.</p>
       </div>
 
       <div class="steps-grid">
         <div class="step">
           <span>1</span>
-          <h3>Choose a Category</h3>
-          <p>Select health, security, trade, education, or other community issue.</p>
+          <h3 data-translate="step1.title">Choose a Category</h3>
+          <p data-translate="step1.desc">Select health, security, trade, education, or other community issue.</p>
         </div>
         <div class="step">
           <span>2</span>
-          <h3>Describe the Problem</h3>
-          <p>Explain what happened, where it happened, and what support is needed.</p>
+          <h3 data-translate="step2.title">Describe the Problem</h3>
+          <p data-translate="step2.desc">Explain what happened, where it happened, and what support is needed.</p>
         </div>
         <div class="step">
           <span>3</span>
-          <h3>Submit the Report</h3>
-          <p>Your issue is sent for review so the right action can be taken.</p>
+          <h3 data-translate="step3.title">Submit the Report</h3>
+          <p data-translate="step3.desc">Your issue is sent for review so the right action can be taken.</p>
         </div>
       </div>
     </section>
@@ -154,23 +162,23 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <h3>Citizen Voice</h3>
-        <p>Giving communities a simple way to report issues and improve public service delivery.</p>
+        <h3 data-translate="footer.brand">Citizen Voice</h3>
+        <p data-translate="footer.desc">Giving communities a simple way to report issues and improve public service delivery.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="report.html">Report Issue</a>
+        <h4 data-translate="footer.links.title">Quick Links</h4>
+        <a href="about.html" data-translate="footer.links.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="services.html" data-translate="footer.links.services"><i class="fa-solid fa-tools"></i> Services</a>
+        <a href="report.html" data-translate="footer.links.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p>Email: info@citizenvoice.gov</p>
-        <p>Phone: +250 700 000 000</p>
+        <h4 data-translate="footer.contact.title">Contact</h4>
+        <p data-translate="footer.contact.email">Email: info@citizenvoice.gov</p>
+        <p data-translate="footer.contact.phone">Phone: +250 798617972 </p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Citizen Voice. All rights reserved.</p>
+      <p data-translate="footer.copyright">&copy; 2026 Citizen Voice. All rights reserved.</p>
     </div>
   </footer>
 
