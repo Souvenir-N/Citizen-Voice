@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Citizen Voice | Gallery</title>
+  <title data-translate="title.gallery">Citizen Voice | Gallery</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,12 +25,20 @@
       <span class="nav-time" id="navTime"></span>
 
       <nav class="nav" id="navMenu">
-        <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
-        <a href="about.html"><i class="fa-solid fa-circle-info"></i> About</a>
-        <a href="services.html"><i class="fa-solid fa-tools"></i> Services</a>
-        <a href="report.html"><i class="fa-solid fa-flag"></i> Report Issue</a>
-        <a href="gallery.html" class="active"><i class="fa-solid fa-images"></i> Gallery</a>
-        <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <a href="index.html" data-translate="nav.home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" data-translate="nav.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="services.html" data-translate="nav.services"><i class="fa-solid fa-tools"></i> Services</a>
+        <a href="report.html" data-translate="nav.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
+        <a href="gallery.html" class="active" data-translate="nav.gallery"><i class="fa-solid fa-images"></i> Gallery</a>
+        <a href="contact.html" data-translate="nav.contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+        <div class="language-selector">
+          <i class="fa-solid fa-globe"></i>
+          <select id="languageSelect" aria-label="Select language">
+            <option value="en">English</option>
+            <option value="rw">Kinyarwanda</option>
+            <option value="fr">Français</option>
+          </select>
+        </div>
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <i class="fa-solid fa-moon"></i>
         </button>
@@ -41,8 +49,8 @@
   <main>
     <section class="page-hero">
       <div class="container fade-in">
-        <h1>Gallery</h1>
-        <p>Sample community images and public service moments.</p>
+        <h1 data-translate="gallery.title">Gallery</h1>
+        <p data-translate="gallery.subtitle">Sample community images and public service moments.</p>
       </div>
     </section>
 
@@ -74,23 +82,23 @@
   <footer class="footer">
     <div class="container footer-grid">
       <div>
-        <h3>Citizen Voice</h3>
-        <p>Giving communities a simple way to report issues and improve public service delivery.</p>
+        <h3 data-translate="footer.brand">Citizen Voice</h3>
+        <p data-translate="footer.desc">Giving communities a simple way to report issues and improve public service delivery.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="report.html">Report Issue</a>
+        <h4 data-translate="footer.links.title">Quick Links</h4>
+        <a href="index.html" data-translate="footer.links.home"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="about.html" data-translate="footer.links.about"><i class="fa-solid fa-circle-info"></i> About</a>
+        <a href="report.html" data-translate="footer.links.report"><i class="fa-solid fa-flag"></i> Report Issue</a>
       </div>
       <div>
-        <h4>Contact</h4>
-        <p>Email: info@citizenvoice.gov</p>
-        <p>Phone: +250 700 000 000</p>
+        <h4 data-translate="footer.contact.title">Contact</h4>
+        <p data-translate="footer.contact.email">Email: info@citizenvoice.gov</p>
+        <p data-translate="footer.contact.phone">Phone: +250 700 000 000</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2026 Citizen Voice. All rights reserved.</p>
+      <p data-translate="footer.copyright">&copy; 2026 Citizen Voice. All rights reserved.</p>
     </div>
   </footer>
 
